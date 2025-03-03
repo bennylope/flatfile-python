@@ -19,10 +19,10 @@ poetry add flatfile
 ## Usage
 
 ```python
-from flatfile.client import FlatFile
+from flatfile.client import Flatfile
 import flatfile
 
-flatfile_client = FlatFile(
+flatfile_client = Flatfile(
   token="API_KEY"
 )
 
@@ -39,12 +39,12 @@ print(f"Created environment with id {environment.id}");
 ## Async Client
 
 ```python
-from flatfile.client import AsyncFlatFile
+from flatfile.client import AsyncFlatfile
 import flatfile
 
 import asyncio
 
-flatfile_client = AsyncFlatFile(
+flatfile_client = AsyncFlatfile(
   token="API_KEY"
 )
 
@@ -64,10 +64,10 @@ asyncio.run(create_environment())
 By default, the client is configured to have a timeout of 60 seconds. You can customize this value at client instantiation. 
 
 ```python
-from flatfile.client import FlatFile
+from flatfile.client import Flatfile
 import flatfile
 
-flatfile_client = FlatFile(
+flatfile_client = Flatfile(
   token="API_KEY",
   timeout=30
 )
